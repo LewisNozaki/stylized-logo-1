@@ -1,3 +1,8 @@
+:root {
+  --bg-color: #011627;
+  --txt-color: #d6deeb;
+}
+
 *, 
 *:before,
 *:after {
@@ -13,4 +18,15 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  background: var(--bg-color);
+  font-family: 'Molle', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  color: var(--txt-color);
+  font-size: 11em;
+  font-weight: 900;
 }
