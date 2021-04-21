@@ -1,19 +1,20 @@
 let text = document.getElementById("my-logo");
 
-const createShadow = (num, elem) => {
-  let shadow = "";
+let shadow = "";
 
-  for (let i = 0; i <= num; i++) {
-    if (i === num) {
-      shadow += `${i * 1}px ${i * 1}px 0px #fb2684`;
-    } else {
-      shadow += `${i * 1}px ${i * 1}px 0px #fb2684,`;
-    }
+const createShadow = (numStart, numEnd, color) => {
+  for (let i = numStart; i <= numEnd; i++) {
+    shadow += `${i * 1}px ${i * 1.5}px 0px ${color},`;
   }
-  
-  console.log(shadow)
-
-  elem.style.textShadow = shadow;
 };
 
-createShadow(30, text);
+let myColor = "#fb2684"
+
+createShadow(0, 30, "pink");
+
+createShadow(31, 61, "#fb2684");
+
+createShadow(61, 91, "#011627")
+
+text.style.textShadow = shadow.slice(0, -1);
+

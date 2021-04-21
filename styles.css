@@ -19,14 +19,18 @@ body {
   margin: 0;
   padding: 0;
   background: var(--bg-color);
+  /* background-image: repeating-conic-gradient(pink 0 9deg, var(--bg-color) 9deg 18deg); */
+  /* background-image: repeating-conic-gradient(from 0deg, pink 0deg 30deg, #fb2684 30deg 60deg, var(--bg-color) 60deg 90deg); */
   font-family: 'Molle', cursive;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2em solid white;
 }
 
 div {
   color: var(--txt-color);
-  font-size: 17em;
+  color: white;
+  font-size: 15em;
   font-weight: 900;
 }
