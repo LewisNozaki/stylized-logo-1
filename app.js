@@ -53,7 +53,7 @@ let num2 = 9;
 for (let i = 0; i < shadowColors.length; i++) {
   createShadow(num1, num2, shadowColors[i]);
   num1 += 10;
-  num2 += 10;
+  num2 += 14;
 }
 
 text.style.textShadow = shadow.slice(0, -1);

@@ -18,7 +18,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: var(--bg-color);
   /* background-image: repeating-conic-gradient(pink 0 9deg, var(--bg-color) 9deg 18deg); */
   /* background-image: repeating-conic-gradient(from 0deg, pink 0deg 30deg, #fb2684 30deg 60deg, var(--bg-color) 60deg 90deg); */
   font-family: 'Molle', cursive;
@@ -34,15 +34,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid white;
+  border: 5em solid white;
   width: 100%;
   height: 100vh;
   clip-path: inset(20px 20px);
 }
 
 #my-logo {
+  width: 100%;
+  height: 100%;
   color: var(--txt-color);
   color: white;
   font-size: 20em;
   font-weight: 900;
+  clip-path: inset(20px 10px);
 }
