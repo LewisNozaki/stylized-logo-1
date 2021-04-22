@@ -31,17 +31,19 @@ let shadow = "";
 
 const createShadow = (numStart, numEnd, color) => {
   for (let i = numStart; i <= numEnd; i++) {
-    shadow += `${i * 1}px ${i * 1.5}px 0px ${color},`;
+    shadow += `${i * 1}px ${i * 1}px 0px ${color},`;
   }
 };
 
-let myColor = "#fb2684"
+let num1 = 0;
 
-createShadow(0, 30, "pink");
+let num2 = 9;
 
-createShadow(31, 61, "#fb2684");
-
-createShadow(61, 91, "#011627")
+for (let i = 0; i < shadowColors.length; i++) {
+  createShadow(num1, num2, shadowColors[i]);
+  num1 += 10;
+  num2 += 11;
+}
 
 text.style.textShadow = shadow.slice(0, -1);
 
