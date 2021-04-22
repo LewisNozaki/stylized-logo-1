@@ -22,7 +22,18 @@ let shadowColors = [
   "#D4F4C5",
   "#D0F8CD",
   "#CBFBD5",
-  "#C6FFDD"
+  "#C6FFDD",
+  "#BDFFE0",
+  "#B5FFE3",
+  "#ACFFE6",
+  "#A3FFE9",
+  "#9AFFEC",
+  "#92FFF0",
+  "#89FFF3",
+  "#80FFF6",
+  "#77FFF9",
+  "#6FFFFC",
+  "#66FFFF"
 ]
 
 let text = document.getElementById("my-logo");
@@ -42,7 +53,7 @@ let num2 = 9;
 for (let i = 0; i < shadowColors.length; i++) {
   createShadow(num1, num2, shadowColors[i]);
   num1 += 10;
-  num2 += 11;
+  num2 += 10;
 }
 
 text.style.textShadow = shadow.slice(0, -1);
