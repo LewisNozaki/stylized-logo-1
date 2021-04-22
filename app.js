@@ -1,3 +1,30 @@
+let shadowColors = [
+  "#F7797D",
+  "#F7827E",
+  "#F88A7F",
+  "#F8937F",
+  "#F89B80",
+  "#F9A481",
+  "#F9AC82",
+  "#FAB583",
+  "#FABD84",
+  "#FAC684",
+  "#FBCE85",
+  "#FBD786",
+  "#FBD786",
+  "#F6DB8E",
+  "#F1DE96",
+  "#EDE29E",
+  "#E8E6A6",
+  "#E3E9AE",
+  "#DEEDB5",
+  "#D9F0BD",
+  "#D4F4C5",
+  "#D0F8CD",
+  "#CBFBD5",
+  "#C6FFDD"
+]
+
 let text = document.getElementById("my-logo");
 
 let shadow = "";
